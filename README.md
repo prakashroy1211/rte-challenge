@@ -16,7 +16,7 @@ without adding any parameters.
 | Dev predictions | [`predictions/`](predictions) |
 | Report (PDF + LaTeX source) | [`report/rte_report.pdf`](report/rte_report.pdf) |
 | Result tables | [`results/experiments.csv`](results/experiments.csv) (per recipe), [`results/runs.csv`](results/runs.csv) (all 45 runs) |
-| Trained weights | GitHub Release `v1.0`, file `albert_large_freelb.zip` (about 70 MB) |
+| Trained weights | GitHub Release `v1.0`, file `albert_large_freelb.zip` (about 63 MB) |
 
 ## Results
 
@@ -49,7 +49,7 @@ cd rte-challenge
 pip install torch transformers sentencepiece
 
 # weights: download albert_large_freelb.zip from the v1.0 release, then
-unzip albert_large_freelb.zip            # -> albert_large_freelb/ (config.json, model.safetensors, spiece.model, ...)
+unzip albert_large_freelb.zip            # -> albert_large_freelb/ (config.json, model.safetensors, tokenizer.json, ...)
 
 python inference.py --model albert_large_freelb --data data/val.jsonl     # dev: prints accuracy 0.8231
 python inference.py --model albert_large_freelb --data data/test.jsonl    # -> test_predictions.jsonl + .csv
