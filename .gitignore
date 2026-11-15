@@ -1,0 +1,27 @@
+# data and training outputs (not committed)
+data/*.jsonl
+data/*.json
+data/*.tsv
+data/*.csv
+work/
+work_smoke/
+# trained weights are attached to the GitHub release instead
+albert_large_freelb/
+*.safetensors
+*.bin
+*.pt
+*.zip
+# inference outputs
+*_predictions.jsonl
+*_predictions.csv
+!predictions/*_predictions.jsonl
+!predictions/*_predictions.csv
+# Python / editors / LaTeX
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+report/*.aux
+report/*.log
+report/*.out

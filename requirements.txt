@@ -1,0 +1,9 @@
+# Tested on Kaggle (torch 2.11, CUDA 13.0, Tesla T4) and Python 3.11.
+torch>=2.1
+transformers>=4.40
+sentencepiece
+protobuf
+safetensors
+numpy
+scipy
+matplotlib
